@@ -39,7 +39,7 @@ O jogo permite que dois usuários insiram seus nomes, joguem alternadamente e ac
 ---
 
 ## Estrutura do Projeto
-
+```
 /
 ├── index.html
 ├── jogo.html
@@ -49,7 +49,7 @@ O jogo permite que dois usuários insiram seus nomes, joguem alternadamente e ac
 │   ├── main.js
 │   ├── jogo.js
 │   └── classes.js
-
+```
 ---
 
 ## Como Executar
