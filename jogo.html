@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="game-container">
+
+        <h1>Jogo da Memória</h1>
+
+        <div class="placar">
+            <div id="jogador1Info" class="jogador">
+                <span id="nomeJogador1">Jogador 1</span>
+                <span class="pontuacao">Pontos: <strong id="pontosJogador1">0</strong></span>
+            </div>
+
+            <div id="jogador2Info" class="jogador">
+                <span id="nomeJogador2">Jogador 2</span>
+                <span class="pontuacao">Pontos: <strong id="pontosJogador2">0</strong></span>
+            </div>
+        </div>
+
+        <div id="turno" class="turno">
+            Turno de: <strong id="jogadorAtual">-</strong>
+        </div>
+
+        <div class="tabuleiro-container">
+            <table id="tabuleiro"></table>
+        </div>
+
+        <div class="controles">
+            <button id="btnReiniciar">Reiniciar Jogo</button>
+        </div>
+
+        <div class="historico-container">
+            <h2>Histórico de Jogadas</h2>
+            <ul id="historicoJogadas"></ul>
+        </div>
+
+    </div>
+
+    <script src="js/classes.js"></script>
+    <script src="js/jogo.js"></script>
+
+</body>
+</html>

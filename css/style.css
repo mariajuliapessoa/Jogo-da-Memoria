@@ -1,0 +1,236 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 350px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    text-align: left;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+input {
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: #2575fc;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1a5ed8;
+}
+
+.erro {
+    color: red;
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+/* =========================
+   PÁGINA DO JOGO
+========================= */
+.game-container {
+    width: 100%;
+    max-width: 900px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* =========================
+   PLACAR
+========================= */
+.placar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.jogador {
+    width: 45%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f1f1f1;
+    transition: 0.3s;
+}
+
+.jogador.ativo {
+    background-color: #d1e7ff;
+    border: 2px solid #2575fc;
+    transform: scale(1.05);
+}
+
+.pontuacao {
+    display: block;
+    margin-top: 5px;
+}
+
+/* =========================
+   TURNO
+========================= */
+.turno {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+/* =========================
+   TABULEIRO
+========================= */
+.tabuleiro-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td {
+    padding: 10px;
+}
+
+/* =========================
+   CARTAS (FLIP 3D)
+========================= */
+.carta {
+    width: 80px;
+    height: 100px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.carta-inner {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+/* Classe aplicada via JS */
+.carta.virada .carta-inner {
+    transform: rotateY(180deg);
+}
+
+/* Faces da carta */
+.carta-front,
+.carta-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    backface-visibility: hidden;
+}
+
+/* Frente (valor) */
+.carta-front {
+    background-color: #ffffff;
+    border: 2px solid #2575fc;
+    transform: rotateY(180deg);
+}
+
+/* Verso */
+.carta-back {
+    background-color: #2575fc;
+    color: white;
+}
+
+/* Carta correta (opcional visual) */
+.carta.acertou .carta-front {
+    background-color: #4caf50;
+    color: white;
+}
+
+.carta.acertou {
+    pointer-events: none;
+    cursor: default;
+    opacity: 0.9;
+}
+
+/* =========================
+   CONTROLES
+========================= */
+.controles {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   HISTÓRICO
+========================= */
+.historico-container {
+    margin-top: 20px;
+}
+
+.historico-container h2 {
+    margin-bottom: 10px;
+}
+
+#historicoJogadas {
+    list-style: none;
+    max-height: 200px;
+    overflow-y: auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fafafa;
+}
+
+#historicoJogadas li {
+    padding: 6px;
+    border-bottom: 1px solid #ddd;
+    font-size: 14px;
+}
+
+#historicoJogadas li:last-child {
+    border-bottom: none;
+}
