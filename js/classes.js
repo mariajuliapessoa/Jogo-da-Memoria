@@ -68,7 +68,11 @@ class JogoMemoria {
     }
 
     alternarTurno() {
-        this.jogadorAtualIndex = this.jogadorAtualIndex === 0 ? 1 : 0;
+        if (this.jogadorAtualIndex === 0) {
+            this.jogadorAtualIndex = 1;
+        } else {
+            this.jogadorAtualIndex = 0;
+        }
     }
 
     virarCarta(carta) {
