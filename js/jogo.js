@@ -103,7 +103,6 @@ function manipularCliqueCarta(carta, elemento) {
 
         const resultado = jogo.verificarPar();
 
-        // ✅ ACERTO
         if (resultado === true) {
 
             adicionarHistorico(jogador, carta1, carta2, true);
@@ -117,7 +116,6 @@ function manipularCliqueCarta(carta, elemento) {
             }, 500);
 
         }
-        // ❌ ERRO
         else if (resultado === false) {
 
             adicionarHistorico(jogador, carta1, carta2, false);

@@ -68,9 +68,6 @@ button:hover {
     margin-top: 5px;
 }
 
-/* =========================
-   PÁGINA DO JOGO
-========================= */
 .game-container {
     width: 100%;
     max-width: 900px;
@@ -80,9 +77,6 @@ button:hover {
     box-shadow: 0 10px 25px rgba(0,0,0,0.2);
 }
 
-/* =========================
-   PLACAR
-========================= */
 .placar {
     display: flex;
     justify-content: space-between;
@@ -108,18 +102,12 @@ button:hover {
     margin-top: 5px;
 }
 
-/* =========================
-   TURNO
-========================= */
 .turno {
     text-align: center;
     margin-bottom: 15px;
     font-size: 18px;
 }
 
-/* =========================
-   TABULEIRO
-========================= */
 .tabuleiro-container {
     display: flex;
     justify-content: center;
@@ -134,9 +122,7 @@ td {
     padding: 10px;
 }
 
-/* =========================
-   CARTAS (FLIP 3D)
-========================= */
+
 .carta {
     width: 80px;
     height: 100px;
@@ -152,12 +138,10 @@ td {
     transform-style: preserve-3d;
 }
 
-/* Classe aplicada via JS */
 .carta.virada .carta-inner {
     transform: rotateY(180deg);
 }
 
-/* Faces da carta */
 .carta-front,
 .carta-back {
     position: absolute;
@@ -171,20 +155,17 @@ td {
     backface-visibility: hidden;
 }
 
-/* Frente (valor) */
 .carta-front {
     background-color: #ffffff;
     border: 2px solid #2575fc;
     transform: rotateY(180deg);
 }
 
-/* Verso */
 .carta-back {
     background-color: #2575fc;
     color: white;
 }
 
-/* Carta correta (opcional visual) */
 .carta.acertou .carta-front {
     background-color: #4caf50;
     color: white;
@@ -196,17 +177,11 @@ td {
     opacity: 0.9;
 }
 
-/* =========================
-   CONTROLES
-========================= */
 .controles {
     text-align: center;
     margin-bottom: 20px;
 }
 
-/* =========================
-   HISTÓRICO
-========================= */
 .historico-container {
     margin-top: 20px;
 }
