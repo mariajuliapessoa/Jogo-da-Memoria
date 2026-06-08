@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Jogo da Memória em JavaScript
 
 ## Descrição
