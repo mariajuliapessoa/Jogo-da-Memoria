@@ -1,0 +1,71 @@
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  width: 350px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.titulo {
+  font-size: 22px;
+  color: #333;
+}
+
+.descricao {
+  font-size: 14px;
+  color: #666;
+}
+
+.codigoBox {
+  background: #f0f6ff;
+  border: 2px dashed #2575fc;
+  border-radius: 10px;
+  padding: 16px 32px;
+}
+
+.codigo {
+  font-size: 36px;
+  font-weight: 900;
+  color: #2575fc;
+  letter-spacing: 6px;
+  font-family: monospace;
+}
+
+.copiar {
+  padding: 8px 16px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.copiar:hover {
+  background: #e4e4e4;
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid #e0e0e0;
+  border-top-color: #2575fc;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

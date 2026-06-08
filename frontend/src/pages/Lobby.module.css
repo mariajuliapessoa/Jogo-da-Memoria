@@ -1,0 +1,106 @@
+.wrapper {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  text-align: center;
+}
+
+.titulo {
+  font-size: 26px;
+  color: #333;
+  margin-bottom: 6px;
+}
+
+.subtitulo {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 24px;
+}
+
+.erro {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.opcoes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  text-align: left;
+}
+
+.label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.btn {
+  margin-top: 6px;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  background-color: #2575fc;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover:not(:disabled) {
+  background-color: #1a5ed8;
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.btnSecundario {
+  padding: 12px;
+  border: 2px solid #2575fc;
+  border-radius: 6px;
+  background: white;
+  color: #2575fc;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btnSecundario:hover {
+  background: #f0f6ff;
+}
+
+.link {
+  background: none;
+  border: none;
+  color: #2575fc;
+  font-size: 14px;
+  cursor: pointer;
+  text-decoration: underline;
+  text-align: center;
+}

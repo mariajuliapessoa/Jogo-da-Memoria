@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tabela {
+  border-collapse: collapse;
+}
+
+.celula {
+  padding: 8px;
+}

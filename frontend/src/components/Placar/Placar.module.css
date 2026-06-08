@@ -1,0 +1,39 @@
+.placar {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.jogador {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #f1f1f1;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.ativo {
+  background-color: #d1e7ff;
+  border: 2px solid #2575fc;
+  transform: scale(1.05);
+}
+
+.nome {
+  font-weight: bold;
+  font-size: 15px;
+}
+
+.voce {
+  font-size: 12px;
+  font-weight: normal;
+  color: #2575fc;
+}
+
+.pontos {
+  font-size: 14px;
+  color: #555;
+}
